@@ -1,0 +1,561 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+}
+.main-title {
+  color: darkcyan;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.first-block {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkcyan;
+  margin-bottom: 200px;
+}
+
+.card {
+  margin: 50px;
+  text-align: center;
+  padding-top: 20px;
+  background: white;
+  width: 120px;
+  height: 100px;
+  color: darkcyan;
+  -webkit-box-shadow: 4px 25px 58px 0px rgba(34, 60, 80, 0.45);
+  -moz-box-shadow: 4px 25px 58px 0px rgba(34, 60, 80, 0.45);
+  box-shadow: 4px 25px 58px 0px rgba(34, 60, 80, 0.45);
+}
+.lines {
+  width: 95%;
+  background: white;
+  height: 1px;
+  position: absolute;
+  top: 60px;
+}
+.lines2 {
+  position: absolute;
+  background: white;
+  transform: rotateZ(90deg);
+  width: 350px;
+  height: 1px;
+  right: -90px;
+}
+.lines::after {
+  display: block;
+  content: "Горизонтальная Ось";
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.lines2::after {
+  content: "Поперечная ось";
+  display: block;
+  color: white;
+  font-size: 20px;
+  transform: rotateZ(180deg) translateX(50px);
+  padding: 10px;
+}
+.text {
+  color: darkcyan;
+  position: absolute;
+  top: 170px;
+  font-size: 20px;
+  left: 100px;
+}
+.text2 {
+  color: darkcyan;
+  position: absolute;
+  top: 300px;
+  font-size: 20px;
+  transform: rotateZ(270deg) translateX(-170px);
+}
+.text3 {
+  position: absolute;
+  color: darkcyan;
+  font-size: 20px;
+  left: 100px;
+  top: 620px;
+}
+.text4 {
+  position: absolute;
+  color: darkcyan;
+  font-size: 20px;
+  left: 500px;
+  top: 620px;
+}
+.text5 {
+  position: absolute;
+  color: darkcyan;
+  font-size: 20px;
+  top: 520px;
+  left: 850px;
+  transform: rotateZ(270deg);
+}
+
+.exemples {
+  display: flex;
+}
+.text-content {
+  color: darkcyan;
+  padding: 20px;
+  margin-left: 100px;
+  width: 500px;
+  height: 200px;
+}
+h2 {
+  margin-bottom: 50px;
+}
+p {
+  font-size: 20px;
+}
+.flex {
+  position: relative;
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  display: flex;
+}
+.cards {
+  width: 50px;
+  height: 50px;
+  background: white;
+  margin: 5px;
+}
+.flex::after {
+  display: block;
+  content: "flex";
+  position: absolute;
+  left: 520px;
+  color: darkcyan;
+  top: 10px;
+  font-size: 20px;
+}
+.flex1 {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  width: 500px;
+  background: darkcyan;
+  height: 80px;
+}
+.flex1::after {
+  display: block;
+  content: "row";
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  font-size: 20px;
+  color: darkcyan;
+}
+.flex2 {
+  position: relative;
+  width: 500px;
+  height: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  background: darkcyan;
+  margin-left: 90px;
+}
+.flex2::after {
+  display: block;
+  content: "row-reverse";
+  font-size: 20px;
+  position: absolute;
+  right: -110px;
+  top: 10px;
+  color: darkcyan;
+}
+.flex3 {
+  position: absolute;
+  bottom: -200px;
+  display: flex;
+  flex-direction: column;
+
+  background: darkcyan;
+  width: 500px;
+  height: 80px;
+}
+.flex3::after {
+  display: block;
+  content: "column";
+  color: darkcyan;
+  position: absolute;
+  right: -65px;
+  font-size: 20px;
+}
+
+.card0 {
+  margin: 5px;
+  width: 70px;
+  height: 20px;
+  background: white;
+}
+.flex4 {
+  background: darkcyan;
+  width: 500px;
+  height: 80px;
+  position: absolute;
+  bottom: -208px;
+  right: 210px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+.nowrap {
+  margin-top: 300px;
+  position: relative;
+}
+.flex-nowrap {
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.flex-nowrap::after {
+  display: block;
+  content: "nowrap";
+  position: absolute;
+  right: -70px;
+  color: darkcyan;
+  font-size: 20px;
+}
+.flex-wrap {
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.flex-wrap::after {
+  display: block;
+  content: "wrap";
+  position: absolute;
+  right: -60px;
+  color: darkcyan;
+  font-size: 20px;
+}
+.card4 {
+  width: 20px;
+  height: 20px;
+  background: white;
+  margin: 5px;
+}
+.flex-wrap-reverse {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background: darkcyan;
+  position: absolute;
+  left: 600px;
+  top: 120px;
+}
+.flex-wrap-reverse::after {
+  display: block;
+  content: " wrap-reverse";
+  position: absolute;
+  right: -120px;
+  top: 0;
+  color: darkcyan;
+  font-size: 20px;
+}
+.jcc {
+  margin-top: 100px;
+}
+.justify {
+  display: flex;
+}
+.justify-start {
+  margin-top: 20px;
+  margin-right: 50px;
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+.justify-start::after {
+  display: block;
+  content: "flex-start";
+  position: absolute;
+  right: -80px;
+  top: 20px;
+  font-size: 20px;
+  color: darkcyan;
+}
+.justify-center {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background: darkcyan;
+  margin-top: 20px;
+  margin-left: 100px;
+  position: relative;
+}
+.justify-center::after {
+  display: block;
+  content: "center";
+  color: darkcyan;
+  position: absolute;
+  right: -60px;
+  top: 20px;
+  font-size: 20px;
+}
+.justify-end {
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  display: flex;
+  justify-content: end;
+  margin-top: 140px;
+  margin-left: -800px;
+  position: relative;
+}
+.justify-end::after {
+  display: block;
+  content: "flex-end";
+  color: darkcyan;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: -80px;
+}
+.space-between {
+  display: flex;
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  justify-content: space-between;
+  margin-left: 600px;
+  margin-top: 40px;
+  margin-right: 50px;
+  position: relative;
+}
+.space-between::after {
+  display: block;
+  content: "space-between";
+  color: darkcyan;
+  font-size: 20px;
+  position: absolute;
+  top: 13px;
+  right: -125px;
+}
+.space-around {
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+
+  margin-top: 40px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.space-around::after {
+  display: block;
+  content: "space-around";
+  color: darkcyan;
+  position: absolute;
+  top: 20px;
+  right: -120px;
+  font-size: 20px;
+}
+.canvas {
+  display: flex;
+}
+
+.align-items {
+  margin-top: 250px;
+}
+.doble-components {
+  display: flex;
+  flex-direction: column;
+}
+.flex-start {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  background: darkcyan;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.stretch {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  align-items: stretch;
+  background: darkcyan;
+
+  margin-right: 100px;
+}
+.cardocs {
+  width: 60px;
+  height: 40px;
+  background: white;
+  margin: 5px;
+}
+.flex-end {
+  width: 500px;
+  height: 200px;
+  background: darkcyan;
+  display: flex;
+  align-items: flex-end;
+}
+.center {
+  width: 500px;
+  height: 200px;
+  background: darkcyan;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.space-between2 {
+  width: 500px;
+  height: 200px;
+  background: darkcyan;
+  display: flex;
+  align-items: baseline;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.unusual {
+  height: 80px;
+}
+.unreal {
+  width: 100px;
+  height: 70px;
+}
+.align-content {
+  margin-top: 200px;
+}
+
+.boxes {
+  width: 30px;
+  height: 30px;
+  background: white;
+  margin: 5px;
+}
+.bruh {
+  margin-left: 50px;
+}
+
+.components {
+  width: 500px;
+  height: 80px;
+  background-color: darkcyan;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-end3 {
+  align-content: flex-end;
+}
+
+.flex-start2 {
+  align-content: flex-start;
+}
+
+.center2 {
+  align-content: center;
+}
+.stretch2 {
+  align-content: stretch;
+}
+.space-between3 {
+  align-content: space-between;
+}
+.space-around2 {
+  align-content: space-around;
+}
+.new-folder {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+
+.order {
+  display: flex;
+}
+
+.preview {
+  width: 500px;
+  height: 80px;
+  background: darkcyan;
+  display: flex;
+}
+.orderbox {
+  order: 0;
+  order: 2;
+}
+.flex-grow {
+  display: flex;
+}
+.flex-growbox {
+  flex-grow: 0;
+}
+.flex-shrink {
+  display: flex;
+}
+.flex-shrinkbox {
+  flex-shrink: 2;
+}
+.flex-basis {
+  display: flex;
+}
+.flex-basisbox {
+  flex-basis: auto;
+}
+.flex01 {
+  display: flex;
+}
+.flex01box {
+  flex: 0.1 auto;
+}
+.align-self {
+  display: flex;
+}
+.align-selfbox {
+  align-self: auto;
+}
+.etc2 {
+  order: 4;
+}
+.etcN {
+  flex-grow: 1;
+}
+.etcb {
+  flex-shrink: 10;
+}
+.etcE{
+  flex-basis: 100px;
+}
+.etc9{
+  align-self: center  ;
+}
+.etc8{
+  align-self: flex-end;
+}

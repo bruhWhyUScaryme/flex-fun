@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="main-title">
+        <p>WAYUP</p>
+        <h1>РУКОВОДСТВО ПО FLEXBOX CSS</h1>
+      </div>
+      <div class="first-block">
+        <div class="lines"></div>
+        <div class="lines2"></div>
+
+        <div class="card">FLEX ELEMENT</div>
+        <div class="card">FLEX ELEMENT</div>
+        <div class="card">FLEX ELEMENT</div>
+      </div>
+      <h1 class="text">Поперечное Начало</h1>
+      <h1 class="text2">Главное Начало</h1>
+      <h1 class="text3">Поперечный Конец</h1>
+      <h1 class="text4">Flex Контейнер</h1>
+      <h1 class="text5">Главный Конец</h1>
+
+      <div class="exemples">
+        <div class="text-content">
+          <h2>display: flex;</h2>
+          <p>Назначение: Запуск механизма FlexBox</p>
+          <p>Возможные значения: flex/ inline-flex</p>
+        </div>
+        <div class="flex">
+          <!-- flex -->
+          <div class="cards">1</div>
+          <div class="cards">2</div>
+          <div class="cards">3</div>
+        </div>
+      </div>
+      <div class="exemples">
+        <div class="text-content">
+          <h2>flex-direction: row;</h2>
+          <p>Назначение: направление укладки элиментов по осям</p>
+          <p>Возможные значения: row/ row-reverse / column / column-reverse</p>
+        </div>
+        <div class="parent">
+         
+            <div class="flex1">
+              <!-- row -->
+              <div class="cards">1</div>
+              <div class="cards">2</div>
+              <div class="cards">3</div>
+            </div>
+            <div class="flex2">
+              <!-- row-reverse -->
+              <div class="cards">1</div>
+              <div class="cards">2</div>
+              <div class="cards">3</div>
+            </div>
+            <div class="flex3">
+                <div class="card0">1</div>
+                <div class="card0">2</div>
+                <div class="card0">3</div>
+            </div>
+            <div class="flex4">
+                <div class="card0">1</div>
+                <div class="card0">2</div>
+                <div class="card0">3</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exemples nowrap">
+        <!-- nowrap -->
+        <div class="text-content">
+            <h2>flex-wrap: nowrap;</h2>
+            <p>Назначение: Расположение элиментов в одну строку или несколько строк</p>
+            <p>Возможные значения: nowrap / wrap / wrap-reverse </p>
+        </div>
+        <div class="flex-nowrap">
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+            <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+
+
+        </div>
+            
+            <div class="flex-wrap">
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+
+
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+            </div>
+            <div class="flex-wrap-reverse">
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+                <div class="card4"></div>
+
+            </div>
+      </div>
+      <div class="exemples jcc">
+        <!-- justify-content -->
+        <div class="text-content">
+          <h2>justify-content: flex-start;</h2>
+          <p>Назначение: выравнивание flex элиментов по главной оси текущей строки</p>
+          <p>Возможные значения: flex-start / flex-end / center / space-between / space-around</p>
+        </div>
+        <div class="justify">
+          <div class="justify-start">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+          </div>
+          <div class="justify-center">
+            <div class="cards">1</div>
+            <div class="cards">2</div>
+            <div class="cards">3</div>
+
+          </div>
+          
+
+        </div>
+        <p><div class="justify-end">
+          <div class="cards">1</div>
+          <div class="cards">2</div>
+          <div class="cards">3</div>
+
+        </div></p>
+        
+
+      </div>
+     <div class="canvas">
+      <div class="space-between">
+        <div class="cards">1</div>
+     <div class="cards">2</div>
+     <div class="cards">3</div>
+</div>
+     <div class="space-around">
+        <div class="cards">1</div>
+     <div class="cards">2</div>
+     <div class="cards">3</div>
+</div>
+     </div>
+      <div class="exemples align-items">
+        <!-- align-items -->
+        <div class="text-content">
+          <h2>align-items: stretch</h2>
+          <p>Назначение: выравнивание flex элиментов вдоль Поперечной сетки </p>
+          <p>Возможные значения: stretch/ flex-start / flex-end / center / baseline</p>
+
+        </div>
+        <div class="doble-components">
+              <div class="stretch">
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+
+              </div>
+                
+              
+
+              
+              <div class="flex-start">
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+                <div class="cardocs"></div>
+              </div>
+
+        </div>
+        <div class="doble-components">
+          <div class="flex-end">
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+
+             </div>
+             <div class="center">
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+              <div class="cardocs"></div>
+
+             </div>
+        </div>
+        <div class="doble-components">
+          <div class="space-between2">
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs unusual"></div>
+            <div class="cardocs unreal"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs"></div>
+            <div class="cardocs unusual"></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="exemples align-content">
+        <!-- align-content -->
+        <div class="text-content">
+          <h2>align-content: stretch</h2>
+          <p>Назначение : выравнивание строки flex вдоль Поперечной оси</p>
+          <p> Возможные значения:  stretch/ flex-start / flex-end / center / space-between/ space-around </p>
+        </div>
+         <div class="doble-components">
+           <div class="flex-end3 components">
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+         
+
+
+           </div>
+           <div class="flex-start2 components">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+            
+
+           </div>
+         </div>
+         <div class="doble-components bruh">
+           <div class="center2 components">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+           
+
+
+           </div>
+           <div class="stretch2 components">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+          
+
+
+           </div>
+         </div>
+         <div class="doble-components bruh">
+           <div class="space-between3 components">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+         
+
+
+           </div>
+           <div class="space-around2 components">
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+             <div class="boxes"></div>
+            
+
+            </div>
+         </div>
+      </div>
+        <div class="new-folder">
+          <div class="title">
+            <h2>Свойства Flex элиментов</h2>
+          </div>
+          <div class="order">
+            <div class="text-content">
+              <h2>order: 0;</h2>
+              <p>Назначение: определения порядка расстановки flex элиментов</p>
+              <p>Возможные значения: ( целое число)</p>
+            </div>
+            <div class="preview orderbox">
+              <div class="boxes etc1">1</div>
+             <div class="boxes etc2">2</div>
+             <div class="boxes etc3">3</div>
+             <div class="boxes etc4">4</div>
+             <div class="boxes etc5">5</div>
+            </div>
+          </div>
+          <div class="flex-grow">
+            <div class="text-content">
+              <h2>flex-grow: 0;</h2>
+              <p>Назначение: фактор растягивания flex элиментов</p>
+              <p>Возможные значения : (целое не отрицательное число )</p>
+            </div>
+            <div class="preview flex-growbox">
+              <div class="boxes etc"> 1</div>
+             <div class="boxes etc">2</div>
+             <div class="boxes etcN">3</div>
+             <div class="boxes etc">4</div>
+             <div class="boxes etc">5</div>
+            </div>
+          </div>
+          <div class="flex-shrink">
+            <div class="text-content">
+              <h2>flex-shrink: 1;</h2>
+              <p>Назначение: указывает фактор сужения </p>
+              <p>Возможные значения: (целое число)</p>
+            </div>
+            <div class="preview flex-shrinkbox">
+              <div class="boxes etc">1</div>
+             <div class="boxes etc">2</div>
+             <div class="boxes etcb">3</div>
+             <div class="boxes etc">4</div>
+             <div class="boxes etc">5</div>
+            </div>
+          </div>
+          <div class="flex-basis">
+            <div class="text-content">
+              <h2> flex-basis:auto;</h2>
+              <p>Назначение: указывает исходный Главный размер элиментов</p>
+              <p>Возможные значения: длинна элимента (пиксели)</p>
+            </div>
+            <div class="preview flex-basisbox">
+              <div class="boxes etc">1</div>
+             <div class="boxes etc">2</div>
+             <div class="boxes etc">3</div>
+             <div class="boxes etcE">4</div>
+             <div class="boxes etc">5</div>
+            </div>
+          </div>
+          <div class="flex01">
+            <div class="text-content">
+              <h2>flex : 0.1 auto ; </h2>
+              <p>Назначение : Сокращенная запись для flex-shrink/ grow/ basis</p>
+              <p>Возможные значения :см Свойства 2 3 и 4 </p>
+            </div>
+            <div class="preview flex01box">
+              <div class="boxes etc">1</div>
+             <div class="boxes etc">2</div>
+             <div class="boxes etc">3</div>
+             <div class="boxes etc">4</div>
+             <div class="boxes etc">5</div>
+            </div>
+          </div>
+          <div class="align-self">
+            <div class="text-content">
+              <h2>align-self:auto ;</h2>
+              <p> Назначение :переопределяет выравнивание элимента по умолчанию</p>
+              <p>Возможные значения: auto/ flex-start/ flex-end/ center/ baseline/ stretch</p>
+            </div>
+            <div class="preview align-selfbox">
+              <div class="boxes etc">1</div>
+             <div class="boxes etc9">2</div>
+             <div class="boxes etc8">3</div>
+             <div class="boxes etc">4</div>
+             <div class="boxes etc">5</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
